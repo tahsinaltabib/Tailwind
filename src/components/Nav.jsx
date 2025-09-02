@@ -14,10 +14,10 @@ const Nav = () => {
 
           <div className="">
             <ul className='flex gap-15 text-2xl'>
-              <li><a className='hover:text-purple-600 duration-500' href="#">Home</a></li>
-              <li><a className='hover:text-purple-600 duration-500' href="#">About</a></li>
-              <li><a className='hover:text-purple-600 duration-500' href="#">Sercice</a></li>
-              <li><a className='hover:text-purple-600 duration-500' href="#">Blog</a></li>
+              <li><a className='hover:text-purple-600 duration-500' href="#">Products</a></li>
+              <li><a className='hover:text-purple-600 duration-500' href="#">Items</a></li>
+              <li><a className='hover:text-purple-600 duration-500' href="#">Man</a></li>
+              <li><a className='hover:text-purple-600 duration-500' href="#">Woman</a></li>
               <li><a className='hover:text-purple-600 duration-500' href="#">Contact</a></li>
             </ul>
           </div>
