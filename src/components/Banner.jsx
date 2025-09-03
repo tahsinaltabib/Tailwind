@@ -17,7 +17,7 @@ const Banner = () => {
   
 
   return (
-  <div className="max-w-[1320px] mx-auto pt-15">
+  <div className="max-w-[1320px] mx-auto pt-38">
     <div className="flex flex-wrap">
       {data.map((item) => (
         <div className="w-1/3 pb-8">

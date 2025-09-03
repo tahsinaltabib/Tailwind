@@ -21,10 +21,10 @@ const Nav = () => {
           <Image src={Logo}/>
           </div>
 
-          <div className={` ${show == true
+          <div className={`lg:static duration-300 ease-in-out ${show == true
             ? "bg-purple-500 absolute left-0 top-25 w-full"
-            : "bg-orange-600 absolute left-0 top-25 w-full"}`}>
-            <ul className='lg:flex gap-8 text-2xl'>
+            : " absolute left-[-100%] top-25 w-full"}`}>
+            <ul className='lg:flex gap-8 text-2xl text-center'>
 
               <li><a className='hover:text-purple-600 duration-500' href="#">Products</a></li>
               <li><a className='hover:text-purple-600 duration-500' href="#">Items</a></li>
