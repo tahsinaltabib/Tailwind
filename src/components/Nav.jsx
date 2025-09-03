@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from '../reuseable/Image'
 import Logo from '../assets/logo1.png'
+import { FaBars } from "react-icons/fa6";
+import { IoMdClose } from "react-icons/io";
+
 
 const Nav = () => {
+  let [show, setShow] = useState(false)
+  
+  let handleShow = () => {
+    setShow(!show);
+  }
+
   return (
     <>
       <div className="max-w-[1320px] mx-auto">
@@ -12,14 +21,22 @@ const Nav = () => {
           <Image src={Logo}/>
           </div>
 
-          <div className="">
-            <ul className='flex gap-15 text-2xl'>
+          <div className={` ${show == true
+            ? "bg-purple-500 absolute left-0 top-25 w-full"
+            : "bg-orange-600 absolute left-0 top-25 w-full"}`}>
+            <ul className='lg:flex gap-8 text-2xl'>
+
               <li><a className='hover:text-purple-600 duration-500' href="#">Products</a></li>
               <li><a className='hover:text-purple-600 duration-500' href="#">Items</a></li>
               <li><a className='hover:text-purple-600 duration-500' href="#">Man</a></li>
               <li><a className='hover:text-purple-600 duration-500' href="#">Woman</a></li>
               <li><a className='hover:text-purple-600 duration-500' href="#">Contact</a></li>
+
             </ul>
+          </div>
+
+          <div onClick={handleShow} className="lg:hidden">
+            {show == true? <IoMdClose/>: <FaBars/>} 
           </div>
 
         </div>
